@@ -1,0 +1,243 @@
+
+			*{
+				/*  box size includes  border and padding in sizing each element */
+				box-sizing:border-box;
+				font-family: "Times New Roman",times, serif
+			}
+
+			h1{
+				text-align:center;
+				font-size: 175%
+				font-weight:bolder;
+				
+			}
+
+			p{
+				margin-top:0px;
+				padding:5px;
+			}
+
+		
+
+			p.meal
+			{
+				border:1px solid black;
+				width: 100px;
+				float:right;
+				text-align:center;
+				font-size:125%;
+				font-weight: bold;
+				font-style: italic;
+
+
+			}
+
+			p.meal#Chicken
+			{
+				background-color:#ff66b2; 
+				font-color:black;
+			}
+
+			p.meal#Beef{
+				background-color: #ff3333;
+				font-color:white;
+			}
+
+			p.meal#Sushi{
+				background-color: #cccc00;
+				font-color:black;
+			}
+
+			p.abt_food
+			{
+				/*clearing out the effect from floating the title to the right*/
+				clear:right;
+				text-align:justify-all;
+				font-size:100%;
+				
+			}
+
+			
+
+			
+
+				div.row
+			{
+				width:100%;
+				
+			}
+
+			div.section
+			{
+				/* this is the division whose borders ought to appear
+				   the border of this division is  offset with the help of margins
+				   from the divisions obtained by grouping the grids accordingly to the screen size
+
+				   These margins enable us no to worry about the right-left or top -down spacings between the meal sections*/
+				border:2px solid black;
+				margin:5px;
+				background-color:#c0c0c0;
+			}
+
+			/* Now  defining the size of the columns per line depending on the screen size*/
+			/* For desktop */
+			@media(min-width:992px)
+			{
+				/* classes definition : .sec-lg-n  : sec --> section , lg --> large , n--> 1 sec covers n grid(s) */
+				.sec-lg-1, .sec-lg-2, .sec-lg-3, .sec-lg-4, .sec-lg-5, .sec-lg-6, .sec-lg-7,
+				.sec-lg-8, .sec-lg-9, .sec-lg-10, .sec-lg-11, .sec-lg-12 
+				{
+					/* here we can define style that only apply to the section when viewing from desktop*/
+					float:left;
+					
+				}
+
+				.sec-lg-1{
+					width:8.33%;
+				}
+				.sec-lg-2{
+					width:16.66%;
+				}
+				.sec-lg-3{
+					width:25%;
+				}
+				.sec-lg-4{
+					width:33%;
+				}
+				.sec-lg-5{
+					width:41.66%;
+				}
+				.sec-lg-6{
+					width:50%;
+				}
+				.sec-lg-7{
+					width:58.33%;
+				}
+				.sec-lg-8{
+					width:66.66%;
+				}
+				.sec-lg-9{
+					width:74.99%;
+				}
+				.sec-lg-10{
+					width:83.33%;
+				}
+				.sec-lg-11{
+					width:91.66%;
+				}
+				.sec-lg-12{
+					width:100%;
+				}
+
+			}
+
+			/* For tablet */
+			@media(min-width: 768px) and (max-width: 991px)
+			{
+				/* classes definition : .sec-lg-n  : sec --> section , md --> medium , n--> 1 sec covers n grid(s) */
+				.sec-md-1, .sec-md-2, .sec-md-3, .sec-md-4, .sec-md-5, .sec-md-6, 
+				.sec-md-7, .sec-md-8, .sec-md-9, .sec-md-10, .sec-md-11, .sec-md-12 
+				{
+					/* here we can define style that only apply to the section when viewing from table ----> if we want the back ground color to change 
+					depending , on the screen size , that could be implemented here*/
+					float:left;
+					
+
+				}
+
+				.sec-md-1{
+					width:8.33%;
+				}
+				.sec-md-2{
+					width:16.66%;
+				}
+				.sec-md-3{
+					width:25%;
+				}
+				.sec-md-4{
+					width:33%;
+				}
+				.sec-md-5{
+					width:41.66%;
+				}
+				.sec-md-6{
+					width:50%;
+				}
+				.sec-md-7{
+					width:58.33%;
+				}
+				.sec-md-8{
+					width:66.66%;
+				}
+				.sec-md-9{
+					width:74.99%;
+				}
+				.sec-md-10{
+					width:83.33%;
+				}
+				.sec-md-11{
+					width:91.66%;
+				}
+				.sec-md-12{
+					width:100%;
+				}
+
+			}
+
+			/* For Handy*/
+			@media(max-width: 767px)
+			{
+				/* classes definition : .sec-lg-n  : sec --> section , sm --> small , n--> 1 sec covers n grid(s) */
+				.sec-sm-1, .sec-sm-2, .sec-sm-3, .sec-sm-4, .sec-sm-5, .sec-sm-6, 
+				.sec-sm-7, .sec-sm-8, .sec-sm-9, .sec-sm-10, .sec-sm-11, .sec-sm-12 
+				{
+					/* here we can define style that only apply to the section when viewing from table ----> if we want the back ground color to change 
+					depending , on the screen size , that could be implemented here*/
+
+					float:left;
+				}
+
+
+				.sec-sm-1{
+					width:8.33%;
+				}
+				.sec-sm-2{
+					width:16.66%;
+				}
+				.sec-sm-3{
+					width:25%;
+				}
+				.sec-sm-4{
+					width:33%;
+				}
+				.sec-sm-5{
+					width:41.66%;
+				}
+				.sec-sm-6{
+					width:50%;
+				}
+				.sec-sm-7{
+					width:58.33%;
+				}
+				.sec-sm-8{
+					width:66.66%;
+				}
+				.sec-sm-9{
+					width:74.99%;
+				}
+				.sec-sm-10{
+					width:83.33%;
+				}
+				.sec-sm-11{
+					width:91.66%;
+				}
+				.sec-sm-12{
+					width:100%;
+				}
+
+			}
+
+			
+
+
+			
