@@ -1,0 +1,182 @@
+body {
+  font-size: 16px;
+  /*color: #fff;*/
+  background-color: #ffffff;
+  font-family: 'Oxygen', sans-serif;
+}
+
+#header-nav
+{
+	background-color: #A0A0A0;
+	border-radius:0;
+	border:0;
+}
+
+
+#logo-img
+{
+	background: url('../images/menu1.jpg') no-repeat;
+	width:150px;
+	height: 150px;
+	margin: 10px 15px 10px 0;
+
+}
+
+.navbar-brand
+{
+	padding-top:25px;
+}
+
+.navbar-brand h1
+{ 
+	font-family: 'Lora', Serif;
+	color:black;
+	font-size: 1.5em;
+	font-weight:bold;
+	text-shadow:  1px 1px 1px #222;
+	margin-top: 0;
+	margin-bottom:0;
+	line-height:.75;
+
+}
+
+.navbar-brand a:hover,.navbar-brand a:focus
+{
+	text-decoration: none;
+}
+
+#nav-list
+{
+	margin-top:10px;
+
+}
+
+#nav-list a{
+	color:black;
+	text-align: center;
+}
+
+#nav-list a:hover{
+	background:#E7E7E7;
+}
+
+#nav-list a span{
+	font-size:1.8em;
+}
+
+
+.navbar-header button.navbar-toggle, .navbar-header .icon-bar
+{
+	border: 1px solid black;
+}
+
+.navbar-header button.navbar-toggle
+{
+	clear:both;
+}
+
+/* Large device only*/
+@media (min-width:1200px)
+{
+
+}
+/* for medium devices*/
+@media(min-width:992px) and (max-width: 1199px)
+{
+	
+}
+
+/* for small devices*/
+@media(min-width:768px) and(max-width:991px)
+{
+	#logo-img
+	{
+		background: url('../images/menu2.jpg') no-repeat;
+		width:100px;
+		height:100px;
+		margin:5px 5px 5px 0;
+	}
+}
+
+/* Extra small devices */
+@media(max-width: 767px)
+{
+	.navbar-band{
+		padding-top:10px;
+		height:80px;
+
+	}
+
+	.navbar-brand h1{
+		padding-top:10px;
+		font-size:5vw;
+
+	}
+}
+
+.row{
+	margin-bottom:15px;
+}
+.row > div
+{
+	background-color: white;
+	/*border:1px solid black;*/
+	color:black;
+	padding:10px;
+	margin:auto;
+
+}
+
+.row .about-menu
+{
+	background-color:gray;
+	padding:5px;
+	height:250px;
+	position:relative;
+}
+
+/* working here on the title of each section*/
+.about-menu > p
+{
+	font-size: 1.25em;
+	font-weight: bold;
+	text-align: center;
+	font-style:italic;
+	
+}
+
+.about-menu > section
+{
+	text-align: justify-all;
+}
+
+h1 #top
+{
+	
+	clear:left;
+
+	text-align:center;
+	margin-right:20px;
+
+}
+	
+h2{
+	text-shadow:  1px 1px 1px #222;
+	clear:both;
+	text-align: center;
+	color:black;
+	font-weight: bolder;
+	font-size: 1.75em;
+
+}
+
+section>a 
+{
+	color:#0000ff;
+	text-decoration: underline;
+	float:right;
+	position:absolute;
+	bottom:5px;
+	right:5px;
+
+}
